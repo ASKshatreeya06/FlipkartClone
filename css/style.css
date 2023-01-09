@@ -106,6 +106,21 @@ nav ul li a:hover{
     margin: 29px;
     list-style: none;
 }
+.card{
+    max-width: 91vw;
+    margin: auto;
+    /* margin-top: 15px; */
+    padding-bottom: 5px;
+    background-color: #00f5f3;
+}
+.card-item{
+    display:inline-flex;
+    justify-content:center;
+    flex-direction: column;
+}
+.lines{
+    margin: 0 20px;
+}
 footer{
     height: 12vh;
     background-color: var(--main-bg-color);

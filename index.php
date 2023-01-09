@@ -49,6 +49,92 @@
             <div class="banner">
                 <img src="" alt="">
             </div>
+            <div class="card">
+                <h2 class="my-2" style="margin: 20px 0;">Explore</h2>
+                <div class="card-item">
+                    <img src="./img/phone.png" height="113" width="142" alt="">
+                    <div class="lines">
+                        <p>Iphone</p>
+                        <p>Min 20% off</p>
+                        <p>Blue</p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="./img/phone.png" height="113" width="142" alt="">
+                    <div class="lines">
+                        <p>Iphone</p>
+                        <p>Min 20% off</p>
+                        <p>Blue</p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="./img/phone.png" height="113" width="142" alt="">
+                    <div class="lines">
+                        <p>Iphone</p>
+                        <p>Min 20% off</p>
+                        <p>Blue</p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="./img/phone.png" height="113" width="142" alt="">
+                    <div class="lines">
+                        <p>Iphone</p>
+                        <p>Min 20% off</p>
+                        <p>Blue</p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="./img/phone.png" height="113" width="142" alt="">
+                    <div class="lines">
+                        <p>Iphone</p>
+                        <p>Min 20% off</p>
+                        <p>Blue</p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="./img/phone.png" height="113" width="142" alt="">
+                    <div class="lines">
+                        <p>Iphone</p>
+                        <p>Min 20% off</p>
+                        <p>Blue</p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="./img/phone.png" height="113" width="142" alt="">
+                    <div class="lines">
+                        <p>Iphone</p>
+                        <p>Min 20% off</p>
+                        <p>Blue</p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="./img/phone.png" height="113" width="142" alt="">
+                    <div class="lines">
+                        <p>Iphone</p>
+                        <p>Min 20% off</p>
+                        <p>Blue</p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="./img/phone.png" height="113" width="142" alt="">
+                    <div class="lines">
+                        <p>Iphone</p>
+                        <p>Min 20% off</p>
+                        <p>Blue</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="my-2" style="margin: 20px 0;">Explore</h2>
+                <div class="card-item">
+                    <img src="./img/phone.png" height="113" width="142" alt="">
+                    <div class="lines">
+                        <p>Iphone</p>
+                        <p>Min 20% off</p>
+                        <p>Blue</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <footer class="flex-all-center">
