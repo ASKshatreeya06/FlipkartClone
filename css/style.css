@@ -34,6 +34,7 @@ nav ul{
     justify-content: flex-start;
     align-items: center;
     height: 58px;
+    
 }
 nav ul li{
     list-style: none;
@@ -98,7 +99,8 @@ nav ul li a:hover{
     justify-content: flex-start;
     align-items: center;
     height: 58px;
-    margin: 5px;
+    margin: 10px;
+    padding-top: 15px;
 }
 .topbar>ul>li{
     margin: 29px;

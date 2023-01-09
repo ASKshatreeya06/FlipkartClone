@@ -37,14 +37,17 @@
                 <ul>
                     <li><a href=""><img style="height: 58px;" src="./img/phone.png" alt=""></a></li>
                     <li><a href=""><img style="height: 58px;" src="./img/1.jpg" alt=""></a></li>
-                    <li><a href=""><img style="height: 58px;" src="./img/R.png" alt=""></a></li>
+                    <li><a href=""><img style="height: 58px; width:66px" src="./img/R.png" alt=""></a></li>
                     <li><a href=""><img style="height: 58px;" src="./img/phone.png" alt=""></a></li>
                     <li><a href=""><img style="height: 58px;" src="./img/1.jpg" alt=""></a></li>
-                    <li><a href=""><img style="height: 58px;" src="./img/R.png" alt=""></a></li>
+                    <li><a href=""><img style="height: 58px;" width="66px" src="./img/R.png" alt=""></a></li>
                     <li><a href=""><img style="height: 58px;" src="./img/phone.png" alt=""></a></li>
                     <li><a href=""><img style="height: 58px;" src="./img/1.jpg" alt=""></a></li>
-                    <li><a href=""><img style="height: 58px;" src="./img/R.png" alt=""></a></li>
+                    <li><a href=""><img style="height: 58px;" width="66px" src="./img/R.png" alt=""></a></li>
                 </ul>
+            </div>
+            <div class="banner">
+                <img src="" alt="">
             </div>
         </div>
     </main>
