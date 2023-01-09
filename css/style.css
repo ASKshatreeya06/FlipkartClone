@@ -15,6 +15,7 @@ header{
 }
 nav{
     display: flex;
+    position: sticky;
 }
 .logo{
     display: flex;
@@ -82,10 +83,15 @@ nav ul li a:hover{
 .container{
     min-height: calc(80vh);
     margin: 3px;
+    overflow: hidden;
+    overflow-y: auto;
 }
 .topbar{
+    position: sticky;
     display: flex;
-    margin: 5px 10% 0 10%;
+    margin: -2px;
+    padding: 0 10%;
+    background-color: var(--main-bg-color)
 }
 .topbar>ul{
     display: flex;
