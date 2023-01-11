@@ -11,27 +11,29 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="index.php"><img src="./img/Flipkart-logo.png"></a>
-            </div>
-            <ul>
-                <li><a href="home.php">Home</a> </li>
-                <li><a href="about.php">About</a></li>
-                <li><a href="contact.php">Contact</a></li>
-            </ul>
-            <div class="search">
-                <input type="text" name="" id="" placeholder="Search...........">
-                <button class="btn">search</button>
-            </div>
-            <div class="account">
-                <button class="btn1">Log in</button>
-                <button class="btn">Sign Up</button>
-            </div>
-        </nav>
-    </header>
+    <?php $heading = "Mobile Phone" ?>
     <main>
+        <header>
+            <nav>
+                <div class="logo">
+                    <a href="index.php"><img src="./img/Flipkart-logo.png"></a>
+                </div>
+                <ul>
+                    <li><a href="home.php">Home</a> </li>
+                    <li><a href="about.php">About</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                </ul>
+                <div class="search">
+                    <input type="text" name="" id="" placeholder="Search...........">
+                    <button class="btn">search</button>
+                </div>
+                <div class="account">
+                    <button class="btn1">Log in</button>
+                    <button class="btn">Sign Up</button>
+                </div>
+            </nav>
+        </header>
+
         <div class="container">
             <div class="topbar">
                 <ul>
@@ -49,94 +51,45 @@
             <div class="banner">
                 <img src="" alt="">
             </div>
+            <?php
+            // $mobile = array("Iphone", "sumsung", "Oppo", "Nokia"); here we can create a multidimensional array for card
+            $mobile = array(
+                "Iphone" => array("$20" => "./img/phone.png"),
+                "Sumgung" => array("$15" => "./img/s1.jpg"),
+                "Oppo" => array("$10" => "./img/op1.png"),
+                "Nokia A1" => array("$5" => "./img/n1.png"),
+                "Iphone X" => array("$200" => "./img/phone.png"),
+                "Sumngung s22" => array("$105" => "./img/s3.jpeg"),
+                "Oppo A83" => array("$100" => "./img/a83.png"),
+                "Nokia A1" => array("$50" => "./img/s1.jpg"),
+                "Iphone s9" => array("$209" => "./img/op1.png"),
+                "Sumngung j2" => array("$150" => "./img/n1.png"),
+                "Oppo A15" => array("$190" => "./img/n2.png"),
+                "Nokia C2" => array("$95" => "./img/n3.png")
+            );
+            ?>
             <div class="card">
-                <h2 class="my-2" style="margin: 20px 0;">Explore</h2>
-                <div class="card-item">
-                    <img src="./img/phone.png" height="113" width="142" alt="">
-                    <div class="lines">
-                        <p>Iphone</p>
-                        <p>Min 20% off</p>
-                        <p>Blue</p>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <img src="./img/phone.png" height="113" width="142" alt="">
-                    <div class="lines">
-                        <p>Iphone</p>
-                        <p>Min 20% off</p>
-                        <p>Blue</p>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <img src="./img/phone.png" height="113" width="142" alt="">
-                    <div class="lines">
-                        <p>Iphone</p>
-                        <p>Min 20% off</p>
-                        <p>Blue</p>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <img src="./img/phone.png" height="113" width="142" alt="">
-                    <div class="lines">
-                        <p>Iphone</p>
-                        <p>Min 20% off</p>
-                        <p>Blue</p>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <img src="./img/phone.png" height="113" width="142" alt="">
-                    <div class="lines">
-                        <p>Iphone</p>
-                        <p>Min 20% off</p>
-                        <p>Blue</p>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <img src="./img/phone.png" height="113" width="142" alt="">
-                    <div class="lines">
-                        <p>Iphone</p>
-                        <p>Min 20% off</p>
-                        <p>Blue</p>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <img src="./img/phone.png" height="113" width="142" alt="">
-                    <div class="lines">
-                        <p>Iphone</p>
-                        <p>Min 20% off</p>
-                        <p>Blue</p>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <img src="./img/phone.png" height="113" width="142" alt="">
-                    <div class="lines">
-                        <p>Iphone</p>
-                        <p>Min 20% off</p>
-                        <p>Blue</p>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <img src="./img/phone.png" height="113" width="142" alt="">
-                    <div class="lines">
-                        <p>Iphone</p>
-                        <p>Min 20% off</p>
-                        <p>Blue</p>
-                    </div>
-                </div>
+                <h2 class="my-2" style="margin: 20px 0;"> <?php echo $heading ?> </h2>
+                <!-- here we can use foreach for print the value of multidimensional araay -->
+                <?php foreach ($mobile as $key => $value) {
+                    foreach ($value as $keys => $values) { ?>
+                        <div class="card-item">
+                            <?php
+                            echo '<img src="' . $values . '" height="113" width="142" alt="">' ?>
+                            <div class="lines">
+                                <p><?php echo $key ?></p>
+                                <p class="g"> <?php echo $keys ?></p>
+                                <p>Blue</p>
+                            </div>
+                        </div>
+                <?php }
+                } ?>
+
             </div>
-            <div class="card">
-                <h2 class="my-2" style="margin: 20px 0;">Explore</h2>
-                <div class="card-item">
-                    <img src="./img/phone.png" height="113" width="142" alt="">
-                    <div class="lines">
-                        <p>Iphone</p>
-                        <p>Min 20% off</p>
-                        <p>Blue</p>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </main>
+
     <footer class="flex-all-center">
         <p>Copyringh &copy; flipkart clone </p>
     </footer>
