@@ -11,12 +11,13 @@
 </head>
 
 <body>
-    <?php $heading = "Mobile Phone" ?>
+    <?php
+    ?>
     <main>
         <header>
             <nav>
                 <div class="logo">
-                    <a href="index.php"><img src="./img/Flipkart-logo.png"></a>
+                    <a href="index.php"><img src="./img/iconak.png"></a>
                 </div>
                 <ul>
                     <li><a href="home.php">Home</a> </li>
@@ -53,6 +54,8 @@
             </div>
             <?php
             // $mobile = array("Iphone", "sumsung", "Oppo", "Nokia"); here we can create a multidimensional array for card
+
+            $heading =  array("Mobile Phone", "Toys", "Eletronics", "fashion", "Man Fashion");
             $mobile = array(
                 "Iphone" => array("$20" => "./img/phone.png"),
                 "Sumgung" => array("$15" => "./img/s1.jpg"),
@@ -66,27 +69,75 @@
                 "Sumngung j2" => array("$150" => "./img/n1.png"),
                 "Oppo A15" => array("$190" => "./img/n2.png"),
                 "Nokia C2" => array("$95" => "./img/n3.png")
+
+
             );
             ?>
-            <div class="card">
-                <h2 class="my-2" style="margin: 20px 0;"> <?php echo $heading ?> </h2>
-                <!-- here we can use foreach for print the value of multidimensional araay -->
-                <?php foreach ($mobile as $key => $value) {
-                    foreach ($value as $keys => $values) { ?>
-                        <div class="card-item">
-                            <?php
-                            echo '<img src="' . $values . '" height="113" width="142" alt="">' ?>
-                            <div class="lines">
-                                <p><?php echo $key ?></p>
-                                <p class="g"> <?php echo $keys ?></p>
-                                <p>Blue</p>
+            <?php $arrlength = count($heading);
+            for ($x = 0; $x < $arrlength; $x++) { ?>
+                <div class="card">
+                    <h2 class="my-2"> <?php echo $heading[$x++] ?> </h2>
+                    <!-- here we can use foreach for print the value of multidimensional araay -->
+                    <?php foreach ($mobile as $key => $value) {
+                        foreach ($value as $keys => $values) { ?>
+                            <div class="card-item">
+                                <?php
+                                echo '<img src="' . $values . '" height="113" width="142" alt="">' ?>
+                                <div class="lines">
+                                    <p><?php echo $key ?></p>
+                                    <p class="g"> <?php echo $keys ?></p>
+                                    <p>Blue</p>
+                                </div>
+                                <button class="aad-card">add card</button>
                             </div>
+                    <?php }
+                    } ?>
+                </div>
+                <div class="card">
+                    <h1 class="my-2"> <?php echo $heading[$x++] ?> </h1>
+                    <div class="card-item">
+                        <img src="" height="113" width="142" alt="">
+                        <div class="lines">
+                            <p>product</p>
+                            <p class="g"></p>
+                            <p>color</p>
                         </div>
-                <?php }
-                } ?>
-
-            </div>
-
+                    </div>
+                </div>
+                <div class="card">
+                    <h1 class="my-2"> <?php echo $heading[$x++] ?> </h1>
+                    <div class="card-item">
+                        <img src="" height="113" width="142" alt="">
+                        <div class="lines">
+                            <p>product</p>
+                            <p class="g"></p>
+                            <p>color</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h1 class="my-2"> <?php echo $heading[$x++] ?> </h1>
+                    <div class="card-item">
+                        <img src="" height="113" width="142" alt="">
+                        <div class="lines">
+                            <p>product</p>
+                            <p class="g"></p>
+                            <p>color</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h1 class="my-2"> <?php echo $heading[$x++] ?> </h1>
+                    <div class="card-item">
+                        <img src="" height="113" width="142" alt="">
+                        <div class="lines">
+                            <p>product</p>
+                            <p class="g"></p>
+                            <p>color</p>
+                        </div>
+                    </div>
+                </div>
+            <?php } ?>
         </div>
     </main>
 
