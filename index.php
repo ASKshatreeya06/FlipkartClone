@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>flipkart |Home</title>
+    <title>ASKSTORE |Home</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/utis.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/signup.css">
 </head>
 
 <body>
@@ -29,8 +31,8 @@
                     <button class="btn">search</button>
                 </div>
                 <div class="account">
-                    <button class="btn1">Log in</button>
-                    <button class="btn">Sign Up</button>
+                    <button class="btn1" onclick="showModel()">Log in</button>
+                    <button class="btn" onclick="signup()">Sign Up</button>
                 </div>
             </nav>
         </header>
@@ -48,6 +50,38 @@
                     <li><a href=""><img style="height: 58px;" src="./img/1.jpg" alt=""></a></li>
                     <li><a href=""><img style="height: 58px;" width="66px" src="./img/R.png" alt=""></a></li>
                 </ul>
+            </div>
+            <div class="overlay" onclick="closeloginform()"></div>
+            <div class="loginform">
+
+                <span onclick="closeloginform()">&times;</span>
+                <form action="" method="post">
+                    <h1>Login</h1>
+                    <label for="">Username</label>
+                    <input type="text" name="Username" id="" placeholder="Username">
+                    <label for="">Password</label>
+                    <input type="password" name="passowrd" id="" placeholder="Password">
+                </form>
+                <button class="login">Log in</button>
+            </div>
+            <div class="overlay" onclick="closesignupform()"></div>
+            <div class="signupform">
+
+                <span onclick="closesignupform()">&times;</span>
+                <form action="" method="post">
+                    <h1>Sign Up</h1>
+                    <label for="">full Name</label>
+                    <input type="text" name="Username" id="" placeholder="Enter Your full name">
+                    <label for="">Gmail</label>
+                    <input type="email" name="email" id="" placeholder="Enter Your email"><br>
+                    <label for="">phone no.</label>
+                    <input type="number" name="number" id="" placeholder="Enter Your phone no.">
+                    <label for="">Password</label>
+                    <input type="password" name="passowrd" id="" placeholder="Password"><br>
+                    <label for="">Re-Password</label>
+                    <input type="password" name="passowrd" id="" placeholder="Re-Password">
+                </form>
+                <button class="login">Sign up</button>
             </div>
             <div class="banner">
                 <img src="" alt="">
@@ -145,5 +179,6 @@
         <p>Copyringh &copy; flipkart clone </p>
     </footer>
 </body>
+<script src="./app.js"></script>
 
 </html>
