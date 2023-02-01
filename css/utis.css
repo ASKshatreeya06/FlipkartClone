@@ -4,14 +4,17 @@
     align-items: center;
 }
 .my-1{
-    margin:10px 0;
+    margin: 5p 0;
 }
 .my-2{
-    margin: 20px 0;
+    margin: 10px 0;
 }
 .mx-1{
     margin:0 10px;
 }
 .mx-2{
     margin: 0 20px;
+}
+.px-2{
+    padding: 0 5px;
 }

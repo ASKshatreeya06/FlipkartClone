@@ -1,3 +1,7 @@
+<?php 
+// require_once 'core/init.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -51,38 +55,12 @@
                     <li><a href=""><img style="height: 58px;" width="66px" src="./img/R.png" alt=""></a></li>
                 </ul>
             </div>
-            <div class="overlay" onclick="closeloginform()"></div>
-            <div class="loginform">
-
-                <span onclick="closeloginform()">&times;</span>
-                <form action="" method="post">
-                    <h1>Login</h1>
-                    <label for="">Username</label>
-                    <input type="text" name="Username" id="" placeholder="Username">
-                    <label for="">Password</label>
-                    <input type="password" name="passowrd" id="" placeholder="Password">
-                </form>
-                <button class="login">Log in</button>
-            </div>
-            <div class="overlay" onclick="closesignupform()"></div>
-            <div class="signupform">
-
-                <span onclick="closesignupform()">&times;</span>
-                <form action="" method="post">
-                    <h1>Sign Up</h1>
-                    <label for="">full Name</label>
-                    <input type="text" name="Username" id="" placeholder="Enter Your full name">
-                    <label for="">Gmail</label>
-                    <input type="email" name="email" id="" placeholder="Enter Your email"><br>
-                    <label for="">phone no.</label>
-                    <input type="number" name="number" id="" placeholder="Enter Your phone no.">
-                    <label for="">Password</label>
-                    <input type="password" name="passowrd" id="" placeholder="Password"><br>
-                    <label for="">Re-Password</label>
-                    <input type="password" name="passowrd" id="" placeholder="Re-Password">
-                </form>
-                <button class="login">Sign up</button>
-            </div>
+            
+            <?php 
+            include("core/login.php");
+            include("core/signup.php");
+            // include ("component/details.php")
+             ?>
             <div class="banner">
                 <img src="" alt="">
             </div>
@@ -106,6 +84,12 @@
 
 
             );
+            $Toy = array(
+                // toy deatails here
+                "Nokia C2" => array("$95" => "./img/n3.png")
+            )
+
+
             ?>
             <?php $arrlength = count($heading);
             for ($x = 0; $x < $arrlength; $x++) { ?>
@@ -114,7 +98,7 @@
                     <!-- here we can use foreach for print the value of multidimensional araay -->
                     <?php foreach ($mobile as $key => $value) {
                         foreach ($value as $keys => $values) { ?>
-                            <div class="card-item">
+                            <div class="card-item my-1">
                                 <?php
                                 echo '<img src="' . $values . '" height="113" width="142" alt="">' ?>
                                 <div class="lines">
@@ -122,21 +106,28 @@
                                     <p class="g"> <?php echo $keys ?></p>
                                     <p>Blue</p>
                                 </div>
-                                <button class="aad-card">add card</button>
+                                <div class="add-card">
+                                <button class="add-card">add card</button>
+                                <button class="add-card px-2">buy </button>
+                                </div>
                             </div>
                     <?php }
                     } ?>
                 </div>
                 <div class="card">
                     <h1 class="my-2"> <?php echo $heading[$x++] ?> </h1>
+                    <?php foreach($Toy as $key => $value){
+                        foreach($value as $keys => $values){ ?>
                     <div class="card-item">
-                        <img src="" height="113" width="142" alt="">
+                       <?php echo '<img src="'.$values.'" height="113" width="142" alt="">'?>
                         <div class="lines">
-                            <p>product</p>
-                            <p class="g"></p>
+                            <p><?php echo $key ?></p>
+                            <p class="g"><?php echo $keys ?></p>
                             <p>color</p>
                         </div>
                     </div>
+                    <?php }
+                    } ?>
                 </div>
                 <div class="card">
                     <h1 class="my-2"> <?php echo $heading[$x++] ?> </h1>
