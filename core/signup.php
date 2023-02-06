@@ -1,18 +1,18 @@
-<div class="overlay" onclick="closesignupform()"></div>
+<div class="overlay1" onclick="closesignupform()"></div>
 <div class="signupform">
     <span onclick="closesignupform()">&times;</span>
     <form action="" method="post">
         <h1>Sign Up</h1>
         <label for="">full Name</label>
-        <input type="text" name="username" required id="" placeholder="Enter Your full name">
+        <input type="text" name="username" required placeholder="Enter Your full name">
         <label for="">Gmail</label>
-        <input type="email" name="email" required id="" placeholder="Enter Your email"><br>
+        <input type="email" name="email" required placeholder="Enter Your email"><br>
         <label for="">phone no.</label>
-        <input type="text" name="number" required id="" placeholder="Enter Your phone no.">
+        <input type="text" name="number" required placeholder="Enter Your phone no.">
         <label for="">Password</label>
-        <input type="password" name="password" required id="" placeholder="Password"><br>
+        <input type="password" name="password" required  placeholder="Password"><br>
         <label for="">Re-Password</label>
-        <input type="password" name="cpassword" required id="" placeholder="Re-Password">
+        <input type="password" name="cpassword" required placeholder="Re-Password">
         <button type="submit" name="submit" class="login" href="#">Sign up</button>
     </form>
 
@@ -63,3 +63,4 @@ if (isset($_POST['submit'])) {
     }
 }
 ?>
+

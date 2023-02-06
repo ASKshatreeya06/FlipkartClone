@@ -1,4 +1,8 @@
+
+
+
 function showModel(){
+    console.log("hello")
     document.querySelector('.overlay').classList.add('showOverlay');
     document.querySelector('.loginform').classList.add('showform');
 
@@ -9,13 +13,12 @@ function closeloginform(){
 }
 
 function signup(){
-    document.querySelector('.overlay').classList.add('showOverlay');
+    document.querySelector('.overlay1').classList.add('showOverlay1');
     document.querySelector('.signupform').classList.add('signform');
 
 }
 function closesignupform(){
-    document.querySelector('.overlay').classList.remove('showOverlay');
+    console.log('Hello')
     document.querySelector('.signupform').classList.remove('signform');
+    document.querySelector('.overlay1').classList.remove('showOverlay1');
 }
-
-

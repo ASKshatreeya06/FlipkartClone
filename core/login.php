@@ -16,9 +16,9 @@
     <form action="" method="post">
         <h1>Login</h1>
         <label for="">Username</label>
-        <input type="text" name="Username" id="" placeholder="Username">
+        <input type="text" name="Username" placeholder="Username">
         <label for="">Password</label>
-        <input type="password" name="passowrd" id="" placeholder="Password">
+        <input type="password" name="passowrd" placeholder="Password">
     </form>
     <button class="login">Log in</button>
 </div>

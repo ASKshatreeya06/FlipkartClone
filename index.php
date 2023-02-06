@@ -170,6 +170,8 @@
         <p>Copyringh &copy; flipkart clone </p>
     </footer>
 </body>
-<script src="./app.js"></script>
+<script src="./app.js">
+   
+</script>
 
 </html>
